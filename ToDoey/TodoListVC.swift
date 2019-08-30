@@ -11,11 +11,14 @@ import UIKit
 class TodoListVC: UITableViewController {
 
     var itemArray = ["Find Mike", "Buy Eggos", "Destory Demongorgon"]
+    var defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        if let items = UserDefaults.standard.array(forKey: "TodoListArray") as? [String] {
+            itemArray = items
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -114,6 +117,7 @@ class TodoListVC: UITableViewController {
             // what happens when user clicks the Add Item button on our UIAlert
             if let newItem = textField.text {
                 self.itemArray.append(newItem)
+                self.defaults.set(self.itemArray, forKey: "TodoListArray")
                 self.tableView.reloadData()
             }
             
