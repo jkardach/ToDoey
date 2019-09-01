@@ -57,9 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				3DA2D4CF2317510100480A97 /* AppDelegate.swift */,
-				3DA2D4E1231751F100480A97 /* TodoListVC.swift */,
-				3DA2D53B231AF81900480A97 /* Model */,
-				3DA2D4D32317510100480A97 /* Main.storyboard */,
+				3DA2D53C231B062500480A97 /* Controllers */,
+				3DA2D53B231AF81900480A97 /* Data Model */,
+				3DA2D53D231B064600480A97 /* Views */,
 				3DA2D4D62317510200480A97 /* Assets.xcassets */,
 				3DA2D4D82317510200480A97 /* LaunchScreen.storyboard */,
 				3DA2D4DB2317510200480A97 /* Info.plist */,
@@ -67,12 +67,28 @@
 			path = ToDoey;
 			sourceTree = "<group>";
 		};
-		3DA2D53B231AF81900480A97 /* Model */ = {
+		3DA2D53B231AF81900480A97 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
 				3DA2D538231AF79A00480A97 /* ToDoeyModel.swift */,
 			);
-			path = Model;
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		3DA2D53C231B062500480A97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DA2D4E1231751F100480A97 /* TodoListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3DA2D53D231B064600480A97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DA2D4D32317510100480A97 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
