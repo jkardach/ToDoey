@@ -1,5 +1,5 @@
 //
-//  ToDoeyModel.swift
+//  Item.swift
 //  ToDoey
 //
 //  Created by jim kardach on 8/31/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ToDoeyModel: NSObject, Codable {
+class Item: NSObject, Codable {
     var title: String = ""
     var done: Bool = false
 }
